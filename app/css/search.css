@@ -1,0 +1,54 @@
+/* Стили инпута поиска и оутпут результата поиска */
+.input_s {
+  width: 170px;
+  height: 30px;
+  position: fixed;
+  bottom: 30px;
+  left: calc(44% - 85px);
+  background: #434852;
+  opacity: 0.5;
+  border: 1px solid #8C8C8C;
+  border-radius: 28px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+/* .search_ico {
+  width: 32px;
+  height: 32px;
+  position: fixed;
+  bottom: 30px;
+  left: 265px;
+  opacity: 0.9;
+  border-radius: 28px;
+}
+
+.img_s {
+  width: 24px;
+  margin-top: 1px;
+  margin-left: 7px;
+  margin-bottom: 2px;
+} */
+.output_area {
+  display: none;
+  width: 185px;
+  height: 40px;
+  position: fixed;
+  bottom: 80px;
+  left: 30%;
+  right: 30px;
+  background: #434852;
+  opacity: 0.5;
+  border: 1px solid #434852;
+  border-radius: 28px;
+  color: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.output_area p {
+  margin-top: 5px;
+  margin-left: 10px;
+  color: white;
+}

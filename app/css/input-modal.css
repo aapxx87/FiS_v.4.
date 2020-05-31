@@ -1,0 +1,72 @@
+.group {
+  position: relative;
+  margin-bottom: 0px;
+  height: 50px;
+}
+
+.input_m1 {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid #757575;
+  border-radius: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 12px;
+  color: #999;
+}
+
+.input_m1:focus {
+  outline: none;
+}
+
+/* LABEL ======================================= */
+label {
+  color: #999;
+  font-size: 14px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+.input_m1:focus~label, .input_m1:valid~label {
+  top: -10px;
+  font-size: 12px;
+  color: #595959;
+}
+
+
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  display: block;
+}
+
+.bar:before, .bar:after {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #595959;
+  transition: 0.6s ease all;
+  -moz-transition: 0.6s ease all;
+  -webkit-transition: 0.6s ease all;
+}
+/* .bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%;
+} */
+
+.input_m1:focus ~ .bar:before, .input_m1:focus ~ .bar:after {
+  width: 85%;
+}

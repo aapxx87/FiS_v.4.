@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cont.css">
+  <link rel="stylesheet" href="css/click_cont.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <link rel="stylesheet" href="css/razdelitel.css">
+  <link rel="stylesheet" href="css/inner_list.css">
+  <link rel="stylesheet" href="css/search.css">
+  <link rel="stylesheet" href="css/inner_cont.css">
+  <link rel="stylesheet" href="css/input-modal.css">
+  <title>FiS server (stage)</title>
+</head>
+
+
+
+<body>
+
+  <div id="myModal" class="modal-overlay">
+
+    <div class="modal-window">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Редактировать</h5>
+        <span class="modal-close">&times;</span>
+      </div>
+
+      <div class="modal-body">
+
+        <form action="/index" method="post">
+
+          <div class="group">
+            <input type="text" name="placeUs" class="input_m1" required autocomplete="off"/>
+            <label>Куда добавляем?</label>
+            <span class="bar"></span>
+          </div>
+
+          <div class="group">
+            <input type="text" name="nameUs" class="input_m1" required autocomplete="off"/>
+            <label>Что добавляем?</label>
+            <span class="bar"></span>
+            <br />
+          </div>
+
+          <button type="submit" class="btn_add">Добавить</button>
+
+        </form>
+
+        <form action="/delete" method="post">
+
+          <div class="group">
+            <input type="text" name="nameUsDel" class="input_m1" required autocomplete="off"/>
+            <label>Что удаляем?</label>
+            <span class="bar"></span>
+            <br />
+          </div>
+
+          <button type="submit" class="btn_rem">Удалить</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Разделитель лекарства -->
+
+  <div class="section_gap" id="farm_gap">
+    <p class="section_title">Коллекции лекарства</p>
+  </div>
+
+
+
+
+  <!-- Карточки лекарств -->
+
+
+  <!-- Карточки лекарств 1 -->
+
+  <div class="clickMe_div" id="clickMe9">
+    <div class="clickMe_div_left">
+      <div class="main-title">Коробка</div>
+      <div class="dop-title">Антрисоль</div>
+    </div>
+
+    <div class="clickMe_div_right">
+      <div class="number">1</div>
+    </div>
+  </div>
+
+  <div class="content_div" id="picframe9"></div>
+
+  <!-- Карточки лекарств 2 -->
+
+  <div class="clickMe_div" id="clickMe10">
+    <div class="clickMe_div_left">
+      <div class="main-title">Коробка</div>
+      <div class="dop-title">Антрисоль</div>
+    </div>
+
+    <div class="clickMe_div_right">
+      <div class="number">2</div>
+    </div>
+  </div>
+
+  <div class="content_div" id="picframe10"></div>
+
+
+  <!-- Карточки лекарств 3 -->
+
+  <div class="clickMe_div" id="clickMe11">
+    <div class="clickMe_div_left">
+      <div class="main-title">Коробка</div>
+      <div class="dop-title">Антрисоль</div>
+    </div>
+
+    <div class="clickMe_div_right">
+      <div class="number">3</div>
+    </div>
+  </div>
+
+  <div class="content_div" id="picframe11"></div>
+
+
+  <!-- Карточки лекарств 4 -->
+
+  <div class="clickMe_div" id="clickMe12">
+    <div class="clickMe_div_left">
+      <div class="main-title">Коробка</div>
+      <div class="dop-title">Антрисоль</div>
+    </div>
+
+    <div class="clickMe_div_right">
+      <div class="number">4</div>
+    </div>
+  </div>
+
+  <div class="content_div" id="picframe12"></div>
+
+
+  <!-- Разделитель вещи -->
+
+  <div class="section_gap" id="item_gap">
+    <p class="section_title">Коллекции вещи</p>
+  </div>
+
+
+
+
+  <!-- Карточки антрисолей -->
+
+
+  <!-- Антрисоль 1 Разное -->
+
+  <div class="clickMe_div" id="clickMe1">
+
+    <div class="clickMe_div_left">
+      <div class="main-title">Разное</div>
+      <div class="dop-title">Антрисоль</div>
+    </div>
+
+    <div class="clickMe_div_right">
+      <div class="number">1</div>
+    </div>
+  </div>
+
+  <div class="content_div" id="picframe1"></div>
+
+
+  <!-- Антрисоль 2 Документы -->
+
+  <div class="clickMe_div" id="clickMe2">
+    <div class="clickMe_div_left">
+      <div class="main-title">Документы</div>
+      <div class="dop-title">Антрисоль</div>
+    </div>
+
+    <div class="clickMe_div_right">
+      <div class="number">2</div>
+    </div>
+  </div>
+
+  <div class="content_div" id="picframe2">
+
+    <div class="summary_list_click" id="clickMe2_1">
+      Пакет ДЛТ
+    </div>
+    <div class="summary_list_content neumorphic" id="picframe2_1">
+    </div>
+
+  </div>
+
+
+  <!-- Антрисоль 3 Фармацевтика -->
+
+  <div class="clickMe_div" id="clickMe3">
+    <div class="clickMe_div_left">
+      <div class="main-title">Фармацевтика</div>
+      <div class="dop-title">Антрисоль</div>
+    </div>
+
+    <div class="clickMe_div_right">
+      <div class="number">3</div>
+    </div>
+  </div>
+
+  <div class="content_div" id="picframe3">
+  </div>
+
+  <!-- Антрисоль 4 Хоз вещи -->
+
+  <div class="clickMe_div" id="clickMe4">
+    <div class="clickMe_div_left">
+      <div class="main-title">Хоз вещи</div>
+      <div class="dop-title">Антрисоль</div>
+    </div>
+
+    <div class="clickMe_div_right">
+      <div class="number">4</div>
+    </div>
+  </div>
+
+  <div class="content_div" id="picframe4">
+
+    <div class="summary_list_click" id="clickMe4_1">
+      Коробка хоз
+    </div>
+    <div class="summary_list_content neumorphic" id="picframe4_1">
+    </div>
+
+    <div class="summary_list_click" id="clickMe4_2">
+      Ящик с мелочевкой
+    </div>
+    <div class="summary_list_content neumorphic" id="picframe4_2">
+    </div>
+
+  </div>
+
+  <!-- Антрисоль 5 Цветы -->
+
+  <div class="clickMe_div" id="clickMe5">
+    <div class="clickMe_div_left">
+      <div class="main-title">Цветы</div>
+      <div class="dop-title">Антрисоль</div>
+    </div>
+
+    <div class="clickMe_div_right">
+      <div class="number">5</div>
+    </div>
+  </div>
+
+  <div class="content_div" id="picframe5"></div>
+
+  <!-- Антрисоль 6 Новый год -->
+
+  <div class="clickMe_div" id="clickMe6">
+    <div class="clickMe_div_left">
+      <div class="main-title">Новый год</div>
+      <div class="dop-title">Антрисоль</div>
+    </div>
+
+    <div class="clickMe_div_right">
+      <div class="number">6</div>
+    </div>
+  </div>
+
+  <div class="content_div" id="picframe6"></div>
+
+  <!-- Антрисоль 7 Кухня -->
+
+  <div class="clickMe_div" id="clickMe7">
+    <div class="clickMe_div_left">
+      <div class="main-title">Кухня</div>
+      <div class="dop-title">Антрисоль</div>
+    </div>
+
+    <div class="clickMe_div_right">
+      <div class="number">7</div>
+    </div>
+  </div>
+
+  <div class="content_div" id="picframe7"></div>
+
+
+  <!-- Антрисоль 8 Детская -->
+
+
+  <div class="clickMe_div" id="clickMe8">
+    <div class="clickMe_div_left">
+      <div class="main-title">Детская</div>
+      <div class="dop-title">Кроватка</div>
+    </div>
+
+    <div class="clickMe_div_right">
+      <div class="number">8</div>
+    </div>
+  </div>
+
+  <div class="content_div" id="picframe8"></div>
+
+
+
+
+  <div class="output_area"></div>
+
+  <input class="input_s" type="text" placeholder="    Поиск">
+
+  <button class="btnSmod" id="btnSmod">Р</button>
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/accardion.js"></script>
+  <script src="js/cont_add.js"></script>
+  <script src="js/modal.js"></script>
+
+
+</body>
+
+</html>

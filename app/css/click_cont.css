@@ -1,0 +1,44 @@
+/* кликабельная часть карточки */
+.clickMe_div {
+  display: inline-flex;
+  background: #694F63;
+  padding: 20px;
+  padding-top: 17px;
+  padding-bottom: 30px;
+  width: 100%;
+  height: 55px;
+  display: block;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+.clickMe_div_left {
+  float: left;
+}
+
+.clickMe_div_right {
+  float: right;
+}
+
+.main-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+  text-align: left;
+  color: white;
+  margin-top: 10px;
+}
+
+.dop-title {
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  font-size: 15px;
+  margin-top: 6px;
+  color: #E4D3CB;
+}
+
+.number {
+  font-size: 35px;
+  color: white;
+  margin-top: 12px;
+  margin-right: 50px;
+  font-family: 'Roboto', sans-serif;
+}
